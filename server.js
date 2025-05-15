@@ -15,7 +15,6 @@ const emailRoutes = require('./src/api/emailApi.js');
 const adminRoutes = require('./src/api/adminApi.js');
 
 const app = express();
-const PORT = process.env.PORT || 5001;
 
 // Middleware
 app.use(cors());
@@ -36,6 +35,13 @@ app.get('/api/test', (req, res) => {
   res.json({ message: 'Server is running!' });
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-}); 
+// Serve static files for development
+if (process.env.NODE_ENV === 'development') {
+  const PORT = process.env.PORT || 5001;
+  app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+  });
+}
+
+// Export for Vercel
+module.exports = app; 

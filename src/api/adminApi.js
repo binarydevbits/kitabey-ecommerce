@@ -9,22 +9,45 @@ const PRODUCTS_FILE = path.join(__dirname, '../data/products.json');
 const ORDERS_FILE = path.join(__dirname, '../data/orders.json');
 const USERS_FILE = path.join(__dirname, '../data/users.json');
 
+// In-memory data for Vercel environment
+let inMemoryProducts = [];
+let inMemoryOrders = [];
+let inMemoryUsers = [];
+
 // Helper functions for data operations
 const readDataFile = (filePath) => {
   try {
+    // For Vercel environment, use in-memory data
+    if (process.env.VERCEL) {
+      if (filePath.includes('products.json')) return inMemoryProducts;
+      if (filePath.includes('orders.json')) return inMemoryOrders;
+      if (filePath.includes('users.json')) return inMemoryUsers;
+      return [];
+    }
+    
+    // For local development, use file system
     if (fs.existsSync(filePath)) {
       const data = fs.readFileSync(filePath, 'utf8');
       return JSON.parse(data);
     }
     return [];
   } catch (error) {
-    console.error(`Error reading file ${filePath}:`, error);
+    console.error(`Error reading data:`, error);
     return [];
   }
 };
 
 const writeDataFile = (filePath, data) => {
   try {
+    // For Vercel environment, update in-memory data
+    if (process.env.VERCEL) {
+      if (filePath.includes('products.json')) inMemoryProducts = data;
+      if (filePath.includes('orders.json')) inMemoryOrders = data;
+      if (filePath.includes('users.json')) inMemoryUsers = data;
+      return true;
+    }
+    
+    // For local development, use file system
     const dirPath = path.dirname(filePath);
     if (!fs.existsSync(dirPath)) {
       fs.mkdirSync(dirPath, { recursive: true });
@@ -32,13 +55,104 @@ const writeDataFile = (filePath, data) => {
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf8');
     return true;
   } catch (error) {
-    console.error(`Error writing file ${filePath}:`, error);
+    console.error(`Error writing data:`, error);
     return false;
   }
 };
 
 // Ensure data directories exist
 const ensureDataFilesExist = () => {
+  // Skip file creation for Vercel environment
+  if (process.env.VERCEL) {
+    // Initialize in-memory data
+    if (inMemoryProducts.length === 0) {
+      inMemoryProducts = Array.from({ length: 25 }).map((_, index) => ({
+        id: index + 1,
+        name: `Book Title ${index + 1}`,
+        sku: `SKU-${1000 + index}`,
+        category: ['Fiction', 'Non-Fiction', 'Self-Help', 'Biography'][Math.floor(Math.random() * 4)],
+        price: Math.floor(Math.random() * 1000) + 99,
+        discount: Math.floor(Math.random() * 30),
+        stock: Math.floor(Math.random() * 100),
+        status: ['In Stock', 'Low Stock', 'Out of Stock'][Math.floor(Math.random() * 3)],
+        image: `https://picsum.photos/seed/${index}/200/300`,
+        author: `Author ${index + 1}`,
+        featured: Math.random() > 0.7
+      }));
+    }
+    
+    if (inMemoryOrders.length === 0) {
+      const orderStatuses = ['Pending', 'Processing', 'Shipped', 'Delivered', 'Cancelled'];
+      const paymentStatuses = ['Paid', 'Pending', 'Failed', 'Refunded'];
+      const paymentMethods = ['Credit Card', 'PayTM', 'UPI', 'Cash on Delivery'];
+      
+      inMemoryOrders = Array.from({ length: 30 }).map((_, index) => {
+        const numItems = Math.floor(Math.random() * 4) + 1;
+        const orderItems = Array.from({ length: numItems }).map((_, itemIndex) => {
+          const product = inMemoryProducts[Math.floor(Math.random() * inMemoryProducts.length)];
+          return {
+            id: itemIndex + 1,
+            productId: product.id,
+            product: product.name,
+            quantity: Math.floor(Math.random() * 3) + 1,
+            price: product.price
+          };
+        });
+        
+        const total = orderItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+        
+        return {
+          id: `ORD-${1000 + index}`,
+          customerName: `Customer ${index + 1}`,
+          customerEmail: `customer${index + 1}@example.com`,
+          date: new Date(Date.now() - Math.floor(Math.random() * 30) * 24 * 60 * 60 * 1000).toISOString(),
+          total: total,
+          status: orderStatuses[Math.floor(Math.random() * orderStatuses.length)],
+          paymentStatus: paymentStatuses[Math.floor(Math.random() * paymentStatuses.length)],
+          paymentMethod: paymentMethods[Math.floor(Math.random() * paymentMethods.length)],
+          shippingAddress: `${Math.floor(Math.random() * 999) + 1} Example St, City, State ${Math.floor(Math.random() * 999999) + 100000}`,
+          items: orderItems,
+          trackingNumber: Math.random() > 0.5 ? `TRK-${Math.floor(Math.random() * 1000000)}` : null
+        };
+      });
+    }
+    
+    if (inMemoryUsers.length === 0) {
+      const roles = ['Admin', 'Customer', 'Seller'];
+      const statusOptions = ['Active', 'Inactive', 'Banned', 'Pending'];
+      
+      inMemoryUsers = Array.from({ length: 25 }).map((_, index) => ({
+        id: index + 1,
+        name: `User ${index + 1}`,
+        email: `user${index + 1}@example.com`,
+        passwordHash: '$2a$10$yCJ66FGFKUkYc4JbLjuGv.sHsZJHeLJx/i6GWs3lIMuRoxyHV0qbG', // "password123"
+        role: roles[Math.floor(Math.random() * roles.length)],
+        status: statusOptions[Math.floor(Math.random() * statusOptions.length)],
+        joinDate: new Date(Date.now() - Math.random() * 10000000000).toISOString(),
+        lastLogin: new Date(Date.now() - Math.random() * 1000000000).toISOString(),
+        orders: Math.floor(Math.random() * 20),
+        verified: Math.random() > 0.3
+      }));
+      
+      // Ensure there's always at least one admin user
+      inMemoryUsers[0] = {
+        id: 1,
+        name: 'Admin User',
+        email: 'admin@kitabey.com',
+        passwordHash: '$2a$10$yCJ66FGFKUkYc4JbLjuGv.sHsZJHeLJx/i6GWs3lIMuRoxyHV0qbG', // "admin123"
+        role: 'Admin',
+        status: 'Active',
+        joinDate: new Date(Date.now() - 10000000000).toISOString(),
+        lastLogin: new Date().toISOString(),
+        orders: 0,
+        verified: true
+      };
+    }
+    
+    return;
+  }
+  
+  // For local development, use filesystem
   const dataDir = path.join(__dirname, '../data');
   if (!fs.existsSync(dataDir)) {
     fs.mkdirSync(dataDir, { recursive: true });
