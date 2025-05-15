@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": ">=16.0.0"
+    "node": "16.x"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",
@@ -37,11 +37,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "node server.js",
-    "dev": "concurrently \"npm run server\" \"npm start\""
+    "dev": "concurrently \"npm run server\" \"npm start\"",
+    "vercel-build": "node vercel-build.js"
   },
   "eslintConfig": {
     "extends": [
