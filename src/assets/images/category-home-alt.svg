@@ -1,0 +1,18 @@
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#E8F5E9"/>
+  <path d="M150 50 L 200 90 V 150 H 100 V 90 L 150 50Z" fill="#81C784"/>
+  <rect x="140" y="120" width="20" height="30" fill="#388E3C"/>
+  <path d="M100 90 H 200" stroke="#388E3C" stroke-width="2"/>
+  
+  <!-- Home & Living Text as Paths -->
+  <path d="M75 170H85V180H75V170Z" fill="#388E3C"/>
+  <path d="M90 170H100V180H90V170Z" fill="#388E3C"/>
+  <path d="M105 170H115V180H105V170Z" fill="#388E3C"/>
+  <path d="M120 170H130V180H120V170Z" fill="#388E3C"/>
+  <path d="M135 170H145V180H135V170Z" fill="#388E3C"/>
+  <path d="M150 170H160V180H150V170Z" fill="#388E3C"/>
+  <path d="M165 170H175V180H165V170Z" fill="#388E3C"/>
+  <path d="M180 170H190V180H180V170Z" fill="#388E3C"/>
+  <path d="M195 170H205V180H195V170Z" fill="#388E3C"/>
+  <path d="M210 170H220V180H210V170Z" fill="#388E3C"/>
+</svg> 

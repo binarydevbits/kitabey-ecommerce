@@ -1,0 +1,29 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="400" fill="#673AB7"/>
+  <path d="M0 0 H 1200 V 100 Q 900 150 600 100 T 0 100 Z" fill="#5E35B1"/>
+  <path d="M0 0 H 1200 V 80 Q 900 130 600 80 T 0 80 Z" fill="#512DA8"/>
+  <circle cx="200" cy="300" r="40" fill="#E1BEE7" opacity="0.5"/>
+  <circle cx="300" cy="250" r="30" fill="#E1BEE7" opacity="0.5"/>
+  <circle cx="400" cy="320" r="25" fill="#E1BEE7" opacity="0.5"/>
+  <circle cx="500" cy="280" r="35" fill="#E1BEE7" opacity="0.5"/>
+  
+  <!-- New Arrivals Text as Paths -->
+  <path d="M600 170H620V210H600V170Z" fill="white"/>
+  <path d="M630 170H650V190H670V210H630V170Z" fill="white"/>
+  <path d="M680 170H720V190H700V210H680V170Z" fill="white"/>
+  
+  <path d="M730 170H770C776.667 170 781.667 171.667 785 175C788.333 178.333 790 183.333 790 190C790 196.667 788.333 201.667 785 205C781.667 208.333 776.667 210 770 210H730V170Z" fill="white"/>
+  <path d="M800 170H840C846.667 170 851.667 171.667 855 175C858.333 178.333 860 183.333 860 190C860 196.667 858.333 201.667 855 205C851.667 208.333 846.667 210 840 210H800V170Z" fill="white"/>
+  <path d="M870 170H910V210H870V170Z" fill="white"/>
+  <path d="M920 170H960V190H940V210H920V170Z" fill="white"/>
+  <path d="M970 170H1010C1016.67 170 1021.67 171.667 1025 175C1028.33 178.333 1030 183.333 1030 190C1030 196.667 1028.33 201.667 1025 205C1021.67 208.333 1016.67 210 1010 210H970V170Z" fill="white"/>
+  <path d="M1040 170H1080V210H1040V170Z" fill="white"/>
+  
+  <!-- Latest Products Text as Paths -->
+  <path d="M600 250H640V270H620V290H600V250Z" fill="white"/>
+  <path d="M650 250H690C696.667 250 701.667 251.667 705 255C708.333 258.333 710 263.333 710 270C710 276.667 708.333 281.667 705 285C701.667 288.333 696.667 290 690 290H650V250Z" fill="white"/>
+  <path d="M720 250H760V290H720V250Z" fill="white"/>
+  <path d="M770 250H810V270H790V290H770V250Z" fill="white"/>
+  <path d="M820 250H860V290H820V250Z" fill="white"/>
+  <path d="M870 250H910V270H890V290H870V250Z" fill="white"/>
+</svg> 

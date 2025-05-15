@@ -1,0 +1,56 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="400" fill="#212121"/>
+  <path d="M0 0 H 1200 V 400 H 0 Z" fill="#212121"/>
+  
+  <!-- Circuit board pattern -->
+  <path d="M100 100 H 300 V 120 H 100 Z" stroke="#4CAF50" stroke-width="2" fill="none"/>
+  <path d="M300 120 V 200 H 320 V 120 Z" stroke="#4CAF50" stroke-width="2" fill="none"/>
+  <path d="M320 200 H 500 V 220 H 320 Z" stroke="#4CAF50" stroke-width="2" fill="none"/>
+  <path d="M500 220 V 300 H 520 V 220 Z" stroke="#4CAF50" stroke-width="2" fill="none"/>
+  <path d="M520 300 H 700 V 320 H 520 Z" stroke="#4CAF50" stroke-width="2" fill="none"/>
+  
+  <path d="M800 50 H 1000 V 70 H 800 Z" stroke="#2196F3" stroke-width="2" fill="none"/>
+  <path d="M1000 70 V 150 H 1020 V 70 Z" stroke="#2196F3" stroke-width="2" fill="none"/>
+  <path d="M1020 150 H 1100 V 170 H 1020 Z" stroke="#2196F3" stroke-width="2" fill="none"/>
+  <path d="M1100 170 V 250 H 1120 V 170 Z" stroke="#2196F3" stroke-width="2" fill="none"/>
+  
+  <path d="M200 250 H 400 V 270 H 200 Z" stroke="#FFC107" stroke-width="2" fill="none"/>
+  <path d="M400 270 V 350 H 420 V 270 Z" stroke="#FFC107" stroke-width="2" fill="none"/>
+  
+  <circle cx="100" cy="100" r="5" fill="#4CAF50"/>
+  <circle cx="300" cy="120" r="5" fill="#4CAF50"/>
+  <circle cx="320" cy="200" r="5" fill="#4CAF50"/>
+  <circle cx="500" cy="220" r="5" fill="#4CAF50"/>
+  <circle cx="520" cy="300" r="5" fill="#4CAF50"/>
+  <circle cx="700" cy="320" r="5" fill="#4CAF50"/>
+  
+  <circle cx="800" cy="50" r="5" fill="#2196F3"/>
+  <circle cx="1000" cy="70" r="5" fill="#2196F3"/>
+  <circle cx="1020" cy="150" r="5" fill="#2196F3"/>
+  <circle cx="1100" cy="170" r="5" fill="#2196F3"/>
+  <circle cx="1120" cy="250" r="5" fill="#2196F3"/>
+  
+  <circle cx="200" cy="250" r="5" fill="#FFC107"/>
+  <circle cx="400" cy="270" r="5" fill="#FFC107"/>
+  <circle cx="420" cy="350" r="5" fill="#FFC107"/>
+  
+  <!-- Electronics Sale Text as Paths -->
+  <path d="M400 120H440V140H420V160H400V120Z" fill="white"/>
+  <path d="M450 120H490V160H450V120Z" fill="white"/>
+  <path d="M500 120H540V140H520V160H500V120Z" fill="white"/>
+  <path d="M550 120H590C596.667 120 601.667 121.667 605 125C608.333 128.333 610 133.333 610 140C610 146.667 608.333 151.667 605 155C601.667 158.333 596.667 160 590 160H550V120Z" fill="white"/>
+  <path d="M620 120H660V160H620V120Z" fill="white"/>
+  <path d="M670 120H710C716.667 120 721.667 121.667 725 125C728.333 128.333 730 133.333 730 140C730 146.667 728.333 151.667 725 155C721.667 158.333 716.667 160 710 160H670V120Z" fill="white"/>
+  <path d="M740 120H780V160H740V120Z" fill="white"/>
+  <path d="M790 120H830V140H810V160H790V120Z" fill="white"/>
+  <path d="M840 120H880V160H840V120Z" fill="white"/>
+  <path d="M890 120H930V140H910V160H890V120Z" fill="white"/>
+  
+  <!-- Best Deals Text as Paths -->
+  <path d="M400 200H440C446.667 200 451.667 201.667 455 205C458.333 208.333 460 213.333 460 220C460 226.667 458.333 231.667 455 235C451.667 238.333 446.667 240 440 240H400V200Z" fill="white"/>
+  <path d="M470 200H510V240H470V200Z" fill="white"/>
+  <path d="M520 200H560V220H540V240H520V200Z" fill="white"/>
+  <path d="M570 200H610V240H570V200Z" fill="white"/>
+  <path d="M620 200H660V240H620V200Z" fill="white"/>
+  <path d="M670 200H710V220H690V240H670V200Z" fill="white"/>
+</svg> 

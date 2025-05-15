@@ -1,0 +1,7 @@
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#FCE4EC"/>
+  <path d="M150 40 L 180 60 V 150 H 120 V 60 L 150 40Z" fill="#F06292"/>
+  <path d="M150 40 L 120 60 H 180 L 150 40Z" fill="#F8BBD0"/>
+  <path d="M135 60 V 90 M165 60 V 90" stroke="#AD1457" stroke-width="2"/>
+  <text x="115" y="180" font-family="Arial" font-weight="bold" font-size="16" fill="#AD1457">FASHION</text>
+</svg> 

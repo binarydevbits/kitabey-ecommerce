@@ -1,0 +1,39 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="400" fill="#212121"/>
+  <path d="M0 0 H 1200 V 400 H 0 Z" fill="#212121"/>
+  
+  <!-- Circuit board pattern -->
+  <path d="M100 100 H 300 V 120 H 100 Z" stroke="#4CAF50" stroke-width="2" fill="none"/>
+  <path d="M300 120 V 200 H 320 V 120 Z" stroke="#4CAF50" stroke-width="2" fill="none"/>
+  <path d="M320 200 H 500 V 220 H 320 Z" stroke="#4CAF50" stroke-width="2" fill="none"/>
+  <path d="M500 220 V 300 H 520 V 220 Z" stroke="#4CAF50" stroke-width="2" fill="none"/>
+  <path d="M520 300 H 700 V 320 H 520 Z" stroke="#4CAF50" stroke-width="2" fill="none"/>
+  
+  <path d="M800 50 H 1000 V 70 H 800 Z" stroke="#2196F3" stroke-width="2" fill="none"/>
+  <path d="M1000 70 V 150 H 1020 V 70 Z" stroke="#2196F3" stroke-width="2" fill="none"/>
+  <path d="M1020 150 H 1100 V 170 H 1020 Z" stroke="#2196F3" stroke-width="2" fill="none"/>
+  <path d="M1100 170 V 250 H 1120 V 170 Z" stroke="#2196F3" stroke-width="2" fill="none"/>
+  
+  <path d="M200 250 H 400 V 270 H 200 Z" stroke="#FFC107" stroke-width="2" fill="none"/>
+  <path d="M400 270 V 350 H 420 V 270 Z" stroke="#FFC107" stroke-width="2" fill="none"/>
+  
+  <circle cx="100" cy="100" r="5" fill="#4CAF50"/>
+  <circle cx="300" cy="120" r="5" fill="#4CAF50"/>
+  <circle cx="320" cy="200" r="5" fill="#4CAF50"/>
+  <circle cx="500" cy="220" r="5" fill="#4CAF50"/>
+  <circle cx="520" cy="300" r="5" fill="#4CAF50"/>
+  <circle cx="700" cy="320" r="5" fill="#4CAF50"/>
+  
+  <circle cx="800" cy="50" r="5" fill="#2196F3"/>
+  <circle cx="1000" cy="70" r="5" fill="#2196F3"/>
+  <circle cx="1020" cy="150" r="5" fill="#2196F3"/>
+  <circle cx="1100" cy="170" r="5" fill="#2196F3"/>
+  <circle cx="1120" cy="250" r="5" fill="#2196F3"/>
+  
+  <circle cx="200" cy="250" r="5" fill="#FFC107"/>
+  <circle cx="400" cy="270" r="5" fill="#FFC107"/>
+  <circle cx="420" cy="350" r="5" fill="#FFC107"/>
+  
+  <text x="400" y="150" font-family="Arial" font-weight="bold" font-size="60" fill="white">ELECTRONICS SALE</text>
+  <text x="400" y="220" font-family="Arial" font-size="36" fill="white">Get the best deals on electronics</text>
+</svg> 

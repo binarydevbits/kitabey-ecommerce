@@ -1,0 +1,13 @@
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#FCE4EC"/>
+  <path d="M150 40 L 180 60 V 150 H 120 V 60 L 150 40Z" fill="#F06292"/>
+  <path d="M150 40 L 120 60 H 180 L 150 40Z" fill="#F8BBD0"/>
+  <path d="M135 60 V 90 M165 60 V 90" stroke="#AD1457" stroke-width="2"/>
+  
+  <!-- Fashion Text as Paths -->
+  <path d="M115 170H125V180H115V170Z" fill="#AD1457"/>
+  <path d="M130 170H140V180H130V170Z" fill="#AD1457"/>
+  <path d="M145 170H155V180H145V170Z" fill="#AD1457"/>
+  <path d="M160 170H170V180H160V170Z" fill="#AD1457"/>
+  <path d="M175 170H185V180H175V170Z" fill="#AD1457"/>
+</svg> 

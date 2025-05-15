@@ -1,0 +1,7 @@
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#E8F5E9"/>
+  <path d="M150 50 L 200 90 V 150 H 100 V 90 L 150 50Z" fill="#81C784"/>
+  <rect x="140" y="120" width="20" height="30" fill="#388E3C"/>
+  <path d="M100 90 H 200" stroke="#388E3C" stroke-width="2"/>
+  <text x="75" y="180" font-family="Arial" font-weight="bold" font-size="16" fill="#388E3C">HOME & LIVING</text>
+</svg> 

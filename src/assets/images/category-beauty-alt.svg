@@ -1,0 +1,16 @@
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#F3E5F5"/>
+  <rect x="120" y="70" width="20" height="60" rx="5" fill="#9C27B0"/>
+  <rect x="150" y="50" width="20" height="80" rx="5" fill="#7B1FA2"/>
+  <rect x="180" y="60" width="20" height="70" rx="5" fill="#4A148C"/>
+  <circle cx="130" cy="60" r="5" fill="#9C27B0"/>
+  <circle cx="160" cy="40" r="5" fill="#7B1FA2"/>
+  <circle cx="190" cy="50" r="5" fill="#4A148C"/>
+  
+  <!-- Beauty Text as Paths -->
+  <path d="M115 170H125V180H115V170Z" fill="#4A148C"/>
+  <path d="M130 170H140V180H130V170Z" fill="#4A148C"/>
+  <path d="M145 170H155V180H145V170Z" fill="#4A148C"/>
+  <path d="M160 170H170V180H160V170Z" fill="#4A148C"/>
+  <path d="M175 170H185V180H175V170Z" fill="#4A148C"/>
+</svg> 

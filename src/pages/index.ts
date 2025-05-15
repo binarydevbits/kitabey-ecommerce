@@ -1,0 +1,16 @@
+export { default as Home } from './Home';
+export { default as ProductList } from './ProductList';
+export { default as ProductDetail } from './ProductDetail';
+export { default as Cart } from './Cart';
+export { default as Login } from './Login';
+export { default as SignUp } from './SignUp';
+export { default as Checkout } from './Checkout';
+export { default as Products } from './Products';
+export { default as NewArrivals } from './NewArrivals';
+export { default as BestSellers } from './BestSellers';
+export { default as Deals } from './Deals';
+export { default as Authors } from './Authors';
+export { default as Blog } from './Blog';
+export { default as Categories } from './Categories';
+export { default as Contact } from './Contact';
+export { default as Wishlist } from './Wishlist'; 

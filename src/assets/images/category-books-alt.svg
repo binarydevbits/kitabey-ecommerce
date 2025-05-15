@@ -1,0 +1,15 @@
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#FFF3E0"/>
+  <rect x="110" y="60" width="20" height="80" fill="#FF9800"/>
+  <rect x="135" y="60" width="20" height="80" fill="#F57C00"/>
+  <rect x="160" y="60" width="20" height="80" fill="#E65100"/>
+  <path d="M110 60 V 140 H 130 V 60 Z" stroke="#5D4037" stroke-width="1"/>
+  <path d="M135 60 V 140 H 155 V 60 Z" stroke="#5D4037" stroke-width="1"/>
+  <path d="M160 60 V 140 H 180 V 60 Z" stroke="#5D4037" stroke-width="1"/>
+  
+  <!-- Books Text as Paths -->
+  <path d="M120 170H130V180H120V170Z" fill="#5D4037"/>
+  <path d="M135 170H145V180H135V170Z" fill="#5D4037"/>
+  <path d="M150 170H160V180H150V170Z" fill="#5D4037"/>
+  <path d="M165 170H175V180H165V170Z" fill="#5D4037"/>
+</svg> 

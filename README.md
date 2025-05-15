@@ -1,46 +1,122 @@
-# Getting Started with Create React App
+# Kitabey E-Commerce Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern e-commerce website built with React, TypeScript, and Material UI.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Responsive design that works on desktop, tablet, and mobile devices
+- Product browsing with filtering and sorting options
+- Product details with images, specifications, and reviews
+- Shopping cart functionality
+- User authentication (login/signup)
+- Clean and modern UI with Material Design
 
-### `npm start`
+## Pages
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. **Home** - Landing page with featured products and categories
+2. **Product List** - Browse products with filtering and sorting options
+3. **Product Detail** - View detailed product information, specifications, and reviews
+4. **Cart** - Review items in cart and proceed to checkout
+5. **Login/Signup** - User authentication screens
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+- **React** - Frontend library
+- **TypeScript** - Type safety
+- **React Router** - Navigation
+- **Material UI** - UI components
+- **Axios** - API requests (for future backend integration)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js (v14 or later)
+- npm or yarn
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/kitabey-ecommerce.git
+cd kitabey-ecommerce
+```
 
-### `npm run eject`
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. Start the development server
+```bash
+npm start
+# or
+yarn start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Project Structure
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+kitabey-ecommerce/
+├── public/
+├── src/
+│   ├── assets/
+│   │   └── images/
+│   ├── components/
+│   │   ├── auth/
+│   │   ├── cart/
+│   │   ├── layout/
+│   │   │   ├── Header.tsx
+│   │   │   ├── Footer.tsx
+│   │   │   ├── Layout.tsx
+│   │   │   └── index.ts
+│   │   └── product/
+│   ├── context/
+│   ├── pages/
+│   │   ├── Home.tsx
+│   │   ├── ProductList.tsx
+│   │   ├── ProductDetail.tsx
+│   │   ├── Cart.tsx
+│   │   ├── Login.tsx
+│   │   ├── SignUp.tsx
+│   │   └── index.ts
+│   ├── utils/
+│   ├── App.tsx
+│   └── index.tsx
+└── package.json
+```
 
-## Learn More
+## Future Enhancements
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Backend integration with Node.js/Express
+- User profile management
+- Order history
+- Wishlist functionality
+- Payment gateway integration
+- Admin dashboard
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Material UI for the beautiful components
+- React team for the amazing library
+- TypeScript team for type safety
+
+## Deployment on Vercel
+
+This project is configured for easy deployment on Vercel.
+
+1. Push your code to a GitHub repository
+2. Visit [Vercel](https://vercel.com) and sign up/login with your GitHub account
+3. Click "New Project" and import your GitHub repository
+4. Vercel will automatically detect the project settings
+5. Click "Deploy" and wait for the build to complete
+
+The project includes a `vercel.json` configuration file that handles both the React frontend and Express backend.
